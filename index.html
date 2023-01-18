@@ -21,20 +21,19 @@
 		<tbody>
 		</tbody>
 	</table>
-	<div class="input-container">
+	<form class="input-container">
 		<label for="title">title</label>
-		<input id="title" type="text">
-
+		<input id="title" type="text" required>
 		<label for="author">author</label>
-		<input id="author" type="text">
+		<input id="author" type="text" required>
 
 		<label for="pages">pages</label>
 		<input id="pages" type="number">
 
 		<label for="read">read</label>
-		<input id="read" name="read" type="checkbox">
+		<input id="read" name="read" type="checkbox" required>
 		<button>Add new Book</button>
-	</div>
+	</form>
 
     <script type="module" src="./src/main.js"></script>
 </body>
