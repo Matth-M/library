@@ -5,6 +5,7 @@ export class Book {
 		this.pages = pages;
 		this.read = read;
 	}
+
 	info() {
 		if (this.read) {
 			return `${this.title} by ${this.author}, ${this.pages} pages, read.`;
