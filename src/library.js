@@ -2,16 +2,20 @@ import { Book } from "./Book.js";
 
 let library = [];
 
+const form = document.querySelector('form');
 const btn = document.querySelector("button");
 const title = document.querySelector("#title");
 const author = document.querySelector("#author");
 const pages = document.querySelector("#pages");
 const read = document.querySelector("#read");
 
+// Get input from the form
 btn.addEventListener("click", () => {
-	addBookToLibrary(title.value, author.value, pages.value, read.checked);
-	// clearInput();
-	displayBooks();
+	if (form.checkValidity()) {
+		addBookToLibrary(title.value, author.value, pages.value, read.checked);
+		// clearInput();
+		displayBooks();
+	}
 });
 
 export function addBookToLibrary(title, author, pages, read) {
