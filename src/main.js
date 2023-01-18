@@ -1,5 +1,5 @@
-import {Library} from './library.js';
+import {addBookToLibrary, displayBooks} from './library.js';
 
 
-Library.addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, false);
-Library.displayBooks();
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, false);
+displayBooks();
