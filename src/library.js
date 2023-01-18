@@ -1,21 +1,6 @@
-class Book {
-	constructor(title, author, pages, read) {
-		this.title = title;
-		this.author = author;
-		this.pages = pages;
-		this.read = read;
-	}
-	title;
-	info() {
-		if (this.read) {
-			return `${this.title} by ${this.author}, ${this.pages} pages, read.`;
-		} else {
-			return `${this.title} by ${this.author}, ${this.pages} pages, not read yet.`;
-		}
-	}
-}
+import { Book } from './Book.js';
 
-const Library = (() => {
+export const Library = (() => {
 	let library = [];
 
 	const btn = document.querySelector('button');
@@ -83,7 +68,3 @@ const Library = (() => {
 		displayBooks,
 	}
 })();
-
-
-Library.addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 295, false);
-Library.displayBooks();
