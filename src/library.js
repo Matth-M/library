@@ -10,7 +10,8 @@ const pages = document.querySelector("#pages");
 const read = document.querySelector("#read");
 
 // Get input from the form
-btn.addEventListener("click", () => {
+btn.addEventListener("click", (e) => {
+	e.preventDefault();
 	if (form.checkValidity()) {
 		addBookToLibrary(title.value, author.value, pages.value, read.checked);
 		// clearInput();
